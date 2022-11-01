@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "npx sandbox",
-    "build": "npx esbuild ./index.mjs --bundle --format=esm --platform=browser --target=es2022 --keep-names --outfile=./dist/enhance.js"
+    "build": "npx rollup ./index.mjs --format=es --exports=default --o=./dist/enhance.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/enhance-dev/enhance-element#readme",
   "devDependencies": {
-    "@architect/sandbox": "^5.3.4",
-    "esbuild": "^0.15.12"
+    "@architect/sandbox": "^5.3.4"
+  },
+  "dependencies": {
+    "rollup": "^3.2.4"
   }
 }
