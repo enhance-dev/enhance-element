@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "npx sandbox",
-    "build": "npx rollup ./index.mjs --format=es --exports=default --o=./dist/enhance.js"
+    "build": "npx rollup ./index.mjs --format=es --exports=default --o=./enhance.mjs"
   },
   "repository": {
     "type": "git",
