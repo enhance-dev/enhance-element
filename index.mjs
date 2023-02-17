@@ -1,4 +1,6 @@
 import morph from './morph.mjs'
+const set = window.requestAnimationFrame
+const cancel = window.cancelAnimationFrame
 
 export default function enhance(tagName, opts) {
   const shadow = opts.shadow
@@ -92,7 +94,8 @@ export default function enhance(tagName, opts) {
 
     attributeChangedCallback(name, oldValue, newValue) {
       if (oldValue !== newValue) {
-        this.process()
+        this.timeout && cancel(this.timeout)
+        this.timeout = set(this.process())
       }
     }
 
