@@ -18,6 +18,7 @@ export default function enhance(tagName, opts) {
     opts.disconnected
   delete opts.disconnectedCallback
   delete opts.disconnected
+  const dropStyles = opts.dropStyles || false
 
   class EnhanceElement extends HTMLElement {
     constructor() {
@@ -104,7 +105,11 @@ export default function enhance(tagName, opts) {
         collect.push(strings[i], values[i])
       }
       collect.push(strings[strings.length - 1])
-      return collect.join('')
+      let elem = collect.join('')
+      if (dropStyles) {
+        elem = elem.join('').replace(/<style([\s\S]+?)<\/style>/g, '')
+      }
+      return elem
     }
 
     get state() {
