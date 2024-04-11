@@ -44,6 +44,6 @@
     "@enhance/event-handler-mixin": "^1.0.2",
     "@enhance/morphdom-mixin": "^1.1.1",
     "@enhance/shadow-element-mixin": "^1.0.1",
-    "@enhance/template-mixin": "^1.0.1"
+    "@enhance/template-mixin": "^1.0.2"
   }
 }
