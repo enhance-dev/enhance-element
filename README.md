@@ -101,5 +101,6 @@ The `shadow` property can be set to either `open` or `closed` and effects how th
     }
   })
 ```
-
+## Considerations
+This is a convenience function that simplifies the createion of a Web Component class and adds Morphdom for automatic DOM updates when registered attributes or store keys update. For more advanced use cases you will want to use the [Enhance Custom Element base class](https://github.com/enhance-dev/enhance-custom-element) or the [Enhance Shadow Element base class](https://github.com/enhance-dev/enhance-shadow-element)
 
