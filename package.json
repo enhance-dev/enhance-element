@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/enhance-dev/enhance-element#readme",
   "devDependencies": {
-    "@enhance/store": "^1.0.1",
+    "@enhance/store": "^1.0.2",
     "@esm-bundle/chai": "^4.3.4-fix.0",
     "@rollup/plugin-node-resolve": "^15.2.1",
     "@web/test-runner": "^0.15.0",
@@ -39,11 +39,11 @@
     "rollup": "^3.29.4"
   },
   "dependencies": {
-    "@enhance/base-element": "^1.3.1",
-    "@enhance/custom-element-mixin": "^1.2.1",
+    "@enhance/base-element": "^1.3.2",
+    "@enhance/custom-element-mixin": "^1.2.2",
     "@enhance/event-handler-mixin": "^1.0.2",
-    "@enhance/morphdom-mixin": "^1.1.1",
-    "@enhance/shadow-element-mixin": "^1.0.1",
-    "@enhance/template-mixin": "^1.0.2"
+    "@enhance/morphdom-mixin": "^1.1.2",
+    "@enhance/shadow-element-mixin": "^1.0.2",
+    "@enhance/template-mixin": "^1.0.3"
   }
 }
